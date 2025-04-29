@@ -4,8 +4,6 @@ import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  console.log(theme);
-
 
   return (
     <button

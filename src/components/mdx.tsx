@@ -50,10 +50,10 @@ function CustomLink({ href, children, ...props }: CustomLinkProps) {
   }
 
   if (href.startsWith('#')) {
-    return <a {...props} />
+    return <a href={href} {...props}>{children}</a>
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />
+  return <a href={href} target="_blank" rel="noopener noreferrer" {...props}>{children}</a>
 }
 
 interface RoundedImageProps extends React.ComponentProps<typeof Image> {
