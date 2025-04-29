@@ -5,7 +5,7 @@ export function BlogPosts() {
   let allBlogs = getBlogPosts()
 
   return (
-    <div className="flex flex-col space-y-0">
+    <div className="flex flex-col">
       {allBlogs
         .sort((a, b) => {
           if (
