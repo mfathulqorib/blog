@@ -6,7 +6,6 @@ import ThemeProvider from "@/theme/theme-provider";
 import { baseUrl } from "@/sitemap";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
-import { Children } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -47,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en"
     className={cx(
-      'dark text-black bg-white dark:text-white dark:bg-black',
+      'text-black bg-white dark:text-white dark:bg-black',
       GeistSans.variable,
       GeistMono.variable
     )}
@@ -57,8 +56,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          enableSystem
           defaultTheme="system"
+          enableSystem={true}
           disableTransitionOnChange
         >
           <Navbar/>

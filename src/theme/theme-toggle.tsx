@@ -6,13 +6,15 @@ export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   console.log(theme);
 
+
   return (
     <button
       type="button"
       className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle hover:cursor-pointer relative py-1 px-2 m-1"
       title="Toggle theme"
       aria-label="Toggle theme"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => {
+        setTheme(theme === "dark" ? "light" : "dark")}}
     >
       <svg 
         xmlns="http://www.w3.org/2000/svg" 

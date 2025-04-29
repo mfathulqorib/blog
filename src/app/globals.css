@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -16,7 +18,6 @@
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
