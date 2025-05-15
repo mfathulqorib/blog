@@ -2,17 +2,19 @@ import { Bio } from '@/components/placeholder'
 import Link from 'next/link'
 import { BlogPosts } from '@/components/posts'
 import { Courseworks } from '@/components/courseworks'
-import photo from '../../public/me.jpg'
-import Image from "next/image";
+import photoDark from '../../public/me.png'
+import photoLight from '../../public/me_light.png'
+import ThemeAwareImage from '@/components/theme-aware-image';
 
 export default function Page() {
   return (
     <main className="max-w-3xl mx-4 lg:mx-auto space-y-8 md:space-y-12 py-8 md:py-12">
       <section className="space-y-6 md:space-y-8">
-        <Image 
-          alt="Indra Zulfi" 
-          src={photo} 
-          className="w-26 h-24 md:w-36 md:h-32 rounded-xl grayscale hover:grayscale-0 transition-all duration-300" 
+        <ThemeAwareImage 
+          alt="Muhammad Fathul" 
+          lightSrc={photoLight}
+          darkSrc={photoDark}
+          className="w-24 h-24 md:w-32 md:h-32 rounded-xl hover:scale-110 transition-all duration-300" 
           priority
         />
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tighter">
