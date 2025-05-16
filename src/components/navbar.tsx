@@ -12,7 +12,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] tracking-tight sticky top-0 w-full bg-white dark:bg-black z-50 border-b-1 border-neutral-200 dark:border-neutral-800 ">
+    <aside className=" tracking-tight sticky top-0 w-full bg-white dark:bg-black z-50 border-b-2 border-neutral-200 dark:border-neutral-800 ">
       <div className="max-w-3xl mx-auto py-1.5 ">
         <nav
           className="flex flex-row items-center justify-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"

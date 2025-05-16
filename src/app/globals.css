@@ -86,7 +86,8 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-neutral-800 dark:text-neutral-200 text-justify leading-6;
+  text-indent: 1rem;
 }
 
 .prose h1 {
@@ -98,11 +99,11 @@ html {
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose strong {
