@@ -61,7 +61,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
   }
 
   return (
-    <section>
+    <section className="py-8 md:py-12">
       <script
         type="application/ld+json"
         suppressHydrationWarning
